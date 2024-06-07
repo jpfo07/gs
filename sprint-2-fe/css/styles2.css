@@ -44,3 +44,23 @@ h2 {
 
 
 button{color: blue;}
+
+
+.header h1 {
+    font-size: 2.5em;
+    color: #2f2f2f;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #8faecb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ponto de Encontro</title>
+    <link rel="stylesheet" href="./css/estilo3.css" />
+
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "46eebac7-bd0d-40bd-987c-63fe11283a6b", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "ebe70554-2b32-4dc0-a740-b57ea82e41a1", // The ID of your service instance.
+        onLoad: async (instance) => {
+          await instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./paginainicial.html">Blue Guardian</a>
+    </header>
+    <div class="container">
+      <h2>Ponto de Encontro</h2>
+      <div class="sections">
+        <div class="section">
+          <h3>Comunicação</h3>
+          <p>
+            Use este espaço para se comunicar com a equipe do projeto. Faça
+            perguntas, compartilhe atualizações e colabore de forma eficiente.
+          </p>
+        </div>
+        <div class="section">
+          <h3>Ponto de Encontro</h3>
+          <p>
+            Use este espaço para falar com especialistas e obter uma discussão
+            aprofundada sobre qualquer assunto relacionado com a vida marinha.
+          </p>
+        </div>
+      </div>
+      <h2>Discussões em Andamento</h2>
+      <div class="discussions">
+        <div class="discussion-card">
+          <h3>Sem diuscussões em andamento</h3>
+        </div>
+        <div class="discussion-card">
+          <h3>Sem discussões em andamento</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
