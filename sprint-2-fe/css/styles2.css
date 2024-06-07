@@ -46,11 +46,6 @@ h2 {
 button{color: blue;}
 
 
-.header h1 {
-    font-size: 2.5em;
-    color: #2f2f2f;
-    margin: 0;
-}
 
 .header {
     width: 100%;
@@ -63,4 +58,10 @@ button{color: blue;}
     top: 0;
     left: 0;
     z-index: 1000;
+}
+
+.header a {
+    font-size: 2.5em;
+    color: #2f2f2f;
+    margin: 0;
 }
